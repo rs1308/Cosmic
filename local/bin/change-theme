@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 export PATH="$HOME/.local/bin:$PATH"
 
-BASE_DIR="$HOME/ikigai/config"
-spicetify_theme="$HOME/.local/bin/spicetify-check"
+BASE_DIR="$HOME/.config/cosmic/config"
 
 gtk3="$HOME/.config/gtk-3.0/settings.ini"
 gtk4="$HOME/.config/gtk-4.0/settings.ini"
@@ -22,32 +21,12 @@ ln -snf "$HOME/.config/zathura/$choice" "$HOME/.config/zathura/theme"
 
 case "$choice" in
 catppuccin)
-  spc=CatppuccinMocha
   gtk_theme="Catppuccin-Dark"
-  ;;
-nord)
-  spc=Nord
-  gtk_theme="Nordic"
-  ;;
-rosepine)
-  spc=RosePine
-
-  gtk_theme="Rosepine-Dark"
-  ;;
-tokyonight)
-  spc=TokyoNight
-
-  gtk_theme="Tokyonight-Dark"
   ;;
 everforest)
   spc=EverforestDarkMedium
 
   gtk_theme="Everforest-Green-Dark"
-  ;;
-dracula)
-  spc=Dracula
-
-  gtk_theme="Dracula"
   ;;
 esac
 
@@ -74,7 +53,5 @@ hyprctl reload
 bash ~/.local/bin/restart-waybar
 
 touch "$BASE_DIR/alacritty/alacritty.toml"
-
-"$spicetify_theme" "$spc" &
 
 notify-send "Theme Changed" "Applied $choice theme"

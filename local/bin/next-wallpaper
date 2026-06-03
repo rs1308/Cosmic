@@ -3,7 +3,7 @@
 indexfile="/home/rs/index"
 index=$(<"$indexfile")
 
-listy=(/home/rs/walls/*)
+listy=(/home/rs/.config/cosmic/walls/*)
 length="${#listy[@]}"
 
 if ((index == $((length - 1)))); then

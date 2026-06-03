@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-basedir="$HOME/walls"
+basedir="$HOME/.config/cosmic/walls"
 indexfile="/home/rs/index"
 index=$(<"$indexfile")
 listy=(/home/rs/walls/*)

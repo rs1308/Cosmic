@@ -26,7 +26,7 @@ hl.bind("ALT + PRINT", hl.dsp.exec_cmd("~/.local/bin/screenshot-region"))
 
 hl.bind("ALT + SHIFT + W", hl.dsp.exec_cmd("~/.local/bin/next-wallpaper"))
 
-hl.bind("ALT + B", hl.dsp.exec_cmd("~/.local/bin/toggle_power"))
+hl.bind("ALT + B", hl.dsp.exec_cmd("~/.local/bin/toggle-power"))
 
 hl.bind("ALT + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 
