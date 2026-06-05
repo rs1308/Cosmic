@@ -26,9 +26,7 @@ rm -rf ~/.config/nvim/.git
 
 echo "Setting up symlinks"
 
-rm -rf ~/.config/hypr
-
-ln -sf ~/.config/cosmic/config/hypr ~/.config/
+rm -rf ~/.config/hypr && ln -sf ~/.config/cosmic/config/hypr ~/.config/
 
 rm -rf ~/.config/waybar
 
